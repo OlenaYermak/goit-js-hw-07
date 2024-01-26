@@ -29,6 +29,22 @@ h2 {
     /* 133.333% */
     letter-spacing: 0.96px;
 }
+.list-style {
+color: #2E2F42;
+ font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+    height: 40px;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    display: grid;
+      align-items: center;
+}
+
 .gallery {
   display: flex;
     flex-wrap: wrap;
@@ -42,7 +58,8 @@ h2 {
       margin-right: auto;
      }
 
-     .change-color{
+     .change-color,
+     .destroy {
 border-radius: 8px;
         background: #4E75FF;
          color: white;
@@ -54,10 +71,18 @@ border-radius: 8px;
          height: 40px;
          border: none;
      }
+     .destroy {
+     background: #FF4E4E;
+     }
          .change-color:hover,
          .change-color:focus {
            background-color: #6C8CFF;
          }
+
+         .destroy:hover,
+         .destroy:focus {
+                      background-color: #FF7070;
+                    }
 
      .widget {
       text-align: center;
@@ -78,11 +103,37 @@ border-radius: 8px;
      .label_style{
       margin-bottom: 8px;
       color: #2E2F42;
-      
-        font-family: Montserrat;
+       font-family: Montserrat;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
-        /* 150% */
         letter-spacing: 0.04em;
      }
+
+            #boxes {
+              display: flex;
+              flex-wrap: wrap;
+              background-color: #F6F6FE;
+                border-radius: 8px;
+                max-width: 70%;
+                margin-right: auto;
+                  margin-left: auto;
+                  justify-content: center;
+            }
+      
+            #boxes div {
+              width: 30px;
+              height: 30px;
+              margin: 5px;
+            }
+                        .container {
+                          display: flex;
+                          align-items: center;
+                            gap: 16px;
+                            width: 486px;
+                            height: 104px;
+                            background-color: #F6F6FE;
+                            border-radius: 8px;
+margin-right: auto;
+margin-left: auto;
+                        }

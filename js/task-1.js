@@ -11,20 +11,21 @@ listCategory.forEach((category) => {
 });
 
 
+//-------STYLE-------//
 
-const newDiv = document.createElement("div");
+const liElements = document.querySelectorAll('ul#categories li:not(.item)');
+liElements.forEach((element) => {
+  element.classList.add("list-style");
+});
 
-const сontent = document.body.innerHTML;
 
-newDiv.innerHTML = сontent;
-newDiv.style.width = "440px";
-newDiv.style.borderRadius = "8px";
-newDiv.style.backgroundColor = "teal"; // color
-newDiv.style.marginLeft = "auto";
-newDiv.style.marginRight = "auto";
 
-document.body.innerHTML = "";
- document.body.appendChild(newDiv);
+
+
+
+
+
+
 
 
 

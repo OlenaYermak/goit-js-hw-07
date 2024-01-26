@@ -4,15 +4,17 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
   const body = document.body;
-  const spanColor = document.querySelector('.color');
-  const buttonChangeColor = document.querySelector('.change-color');
+  const spanColor = document.querySelector(".color");
+  const buttonChangeColor = document.querySelector(".change-color");
 
-  buttonChangeColor.addEventListener('click', () => {
-    const colorRandom = getRandomHexColor();
+ function clickHandler() {
+  const colorRandom = getRandomHexColor();
 
     body.style.backgroundColor = colorRandom;
     spanColor.textContent = colorRandom;
-  });
+}
+
+buttonChangeColor.addEventListener("click", clickHandler);
 
   /-------STYLE------/
 
@@ -25,6 +27,8 @@ paragraph.style.lineHeight = "1.5"
 paragraph.style.letterSpacing = "0.04em";
 paragraph.style.marginBottom = "16px";
 buttonChangeColor.style.width = "148px";
+
+
 
 
  
